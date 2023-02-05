@@ -4,12 +4,12 @@ Pré-requis:
 -   `var` et `function` interdit ---> let, const et fonctions fléchées obligatoire.
 
 Exemple:
-var toto = "toto" --- interdit
-let toto = "toto" --- autorisé
-const toto = "toto" --- autorisé
 
-function toto() { return true } --- interdit
-const toto = () => { return true } --- autorisé
+    -   `var toto = "toto"` --- interdit
+    -   `let toto = "toto"` --- autorisé
+    -   `const toto = "toto"` --- autorisé
+    -   `function toto() { return true }` --- interdit
+    -   `const toto = () => { return true }` --- autorisé
 
 -   À vous de créer les objets, tableaux etc pour vos tests, ça vous entrainera à en écrire des objets, tableaux... par exemple et faire des recherches sur internet si besoin pour apprendre à le faire.
 -   Les exercices sont "théoriquement" du plus facile au plus difficile.
@@ -30,18 +30,18 @@ const toto = () => { return true } --- autorisé
 
 Par exemple, si l'entrée est [1, 2, 3, 2, 1], la sortie sera [1, 2, 3]
 
-4. Écrivez une fonction qui prend une chaîne de caractères en entrée et vérifie si cette chaîne est un mot de passe valide. La fonction doit renvoyer les boolean true ou false.
+4. Écrivez une fonction qui prend une chaîne de caractères en entrée et vérifie si cette chaîne est un mot de passe valide. La fonction doit renvoyer les boolean `true` ou `false`.
    (Le password doit contenir au moins 8 caractères, au moins une majuscule, au moins un chiffre)
 
 5. Écrivez une fonction qui trie un tableau d'entiers par ordre croissant et renvoie le résultat.
 
 6. Écrivez une fonction qui utilise la décomposition pour extraire les propriétés de l'objet books et les afficher.
-   const books = { title: "Harry Potter", autor: "J.K. Rowling", editor: "Gallimard" }
+   ` const books = { title: "Harry Potter", autor: "J.K. Rowling", editor: "Gallimard" }`
 
 7. Écrivez une fonction qui prend un tableau d'objets "employees" (employés) en entrée et renvoie la somme des salaires de tous les employés.
    Un objet "employee" sera formaté par exemple comme ceci:
-   const employee1 = { name: "John Doe", salary: "1500" }
-   const employee2 = { name: "Tidus", salary: "7500" }
+   `const employee1 = { name: "John Doe", salary: "1500" }`
+   `const employee2 = { name: "Tidus", salary: "7500" }`
 
 8. Écrivez une fonction qui prend un objet employé en entrée et modifie son salaire. Affichez le nouveau salaire de l'employé.
 
