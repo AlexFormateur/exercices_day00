@@ -28,7 +28,7 @@ Le tableau `users` doit être importé dans app.js, pas copié-coller.
    Il y a beaucoup de tuto à disposition pour trouver le code qui lance un serveur express.
 7. Créer un route GET `/users` qui renvoie tous les users du tableau `users`.
 8. Créer une route GET `/user/:id` qui renvoie le user qui posséde l'id passé en paramètre.
-9. Créer une route POST `/users` qui reçoit dans son body l'objet ci-dessous, qui l'ajoute au tableau `users` et renvoie le nouveau tableau. L'id du nouvel entrant devra être l'id du dernier user du tableau `users + 1`.
+9. Créer une route POST `/users` qui reçoit dans son body l'objet ci-dessous, qui l'ajoute au tableau `users` et renvoie le nouveau tableau. L'id du nouvel entrant devra être l'id du dernier user du tableau `users` + 1.
    N'ajouter pas l'id en dur, c'est moins drôle.
    L'objet à envoyer via le body: { name: 'Peach', age: 23, salary: 99000 }
 10. Créer une route DELETE `/users/:id` qui supprime dans le tableau `users`, l'user avec l'id passé en paramètre de la requête, renvoyer ensuite le nouveau tableau.
