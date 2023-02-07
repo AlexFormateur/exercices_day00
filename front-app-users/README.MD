@@ -1,4 +1,4 @@
-ReactJs / Jquery au choix.
+ReactJs ou HTML | Jquery au choix.
 CSS / Tailwind / MaterialUi autorisés.
 
 Vous allez devoir utilisé votre api node pour récupérer vos data.
