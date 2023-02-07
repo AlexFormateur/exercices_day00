@@ -32,3 +32,20 @@ Le tableau `users` doit être importé dans app.js, pas copié-coller.
    N'ajouter pas l'id en dur, c'est moins drôle.
    L'objet à envoyer via le body: { name: 'Peach', age: 23, salary: 99000 }
 10. Créer une route DELETE `/users/:id` qui supprime dans le tableau `users`, l'user avec l'id passé en paramètre de la requête, renvoyer ensuite le nouveau tableau.
+
+# Bonus:
+
+1. Ajouter le tableau `users` via une base de donnée dans une table `users`
+2. Ajouter un champs `password` à votre table `users`
+3. Modifier vos routes pour utiliser votre BDD et non plus le tableau `users`
+4. Faire une route POST `sign-up` qui servira de route d'inscription à un user.
+   Le body devra contenir: `name`, `age`, `salary`, `password`
+   Le password doit être crypté avant d'être enregistré dans la BDD (npm bcrypt)
+   Le mot de passe doit faire minimum 8 caractères, 1 majuscule, 1 chiffre
+   La route doit renvoyer une réponse 200 si tout c'est bien passé
+5. Faire une route POST `/login` pour que l'user se connecte
+   Le body devra contenir: `name`, `password`
+   La route devra vérifier que le password ainsi que le name soit correctes
+   Par correct on entend que name existe en BDD et que le mot de passe soit celui enregistré en BDD
+   Si tout est ok, la route renvoie un token JWT (npm jsonwebtoken) valide 1h
+6. Hormis `sign-up` et `login`, toutes les routes ne pourront être accessible que par un user possédant un token valide. (Astuce: Middleware)
