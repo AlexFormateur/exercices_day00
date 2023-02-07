@@ -49,3 +49,4 @@ Le tableau `users` doit être importé dans app.js, pas copié-coller.
    Par correct on entend que name existe en BDD et que le mot de passe soit celui enregistré en BDD
    Si tout est ok, la route renvoie un token JWT (npm jsonwebtoken) valide 1h
 6. Hormis `sign-up` et `login`, toutes les routes ne pourront être accessible que par un user possédant un token valide. (Astuce: Middleware)
+   Si l'user n'est pas connecté, renvoyer l'erreur HTTP adequat (`Unauthorized`)
