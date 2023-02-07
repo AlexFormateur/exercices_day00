@@ -21,12 +21,12 @@ Le tableau `users` doit être importé dans app.js, pas copié-coller.
 
 1. Créez un nouveau répertoire pour le projet qui se nomme "api-users".
 2. Executer la commande `npm` pour initier le projet (init) dans le dossier "api-users".
-3. Vous allez devoir lancer une commande npm pour installé les packages présents dans le fichier `package.json`
-4. Installer le package npm: "Express"
+3. Vous allez devoir lancer une commande npm pour installé les packages présents dans le fichier `package.json`.
+4. Installer le package npm: "Express".
 5. Créer un fichier app.js qui contiendra le code pour run votre serveur.
-6. Le lancement du serveur devra aficher `Express is running on port: numeroDuPort`. (Encore une fois, Google et votre voisin sont vos amis, Bon chance !)
-   Il y a beaucoup de tuto à disposition pour trouver le code qui lance un serveur express
-7. Créer un route GET `/users` qui renvoie tous les users du tableau `user`.
+6. Le lancement du serveur devra aficher `Express is running on port: numeroDuPort`. (Encore une fois, Google et votre voisin sont vos amis, Bon chance !).
+   Il y a beaucoup de tuto à disposition pour trouver le code qui lance un serveur express.
+7. Créer un route GET `/users` qui renvoie tous les users du tableau `users`.
 8. Créer une route GET `/user/:id` qui renvoie le user qui posséde l'id passé en paramètre.
 9. Créer une route POST `/users` qui reçoit dans son body l'objet ci-dessous, qui l'ajoute au tableau `users` et renvoie le nouveau tableau. L'id du nouvel entrant devra être l'id du dernier user du tableau `users + 1`.
    N'ajouter pas l'id en dur, c'est moins drôle.
